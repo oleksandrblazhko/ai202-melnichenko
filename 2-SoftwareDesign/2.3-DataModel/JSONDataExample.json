@@ -1,0 +1,26 @@
+{
+  "spot_info": {
+    "desc": "Преход біля ОНПУ",
+    "image": {},
+    "location": "(66.122, -44.551)",
+    "name": "Переход"
+  },
+  "User": {
+    "nick_name": "TigerLoveBanana",
+    "profile_photo": {},
+    "info": {
+      "desc": "Putin huilo",
+      "contacts": "+123456789",
+      "optional_info": {
+        "real_name": "Yegor Melnyhenko",
+        "additional_photos": [
+          {},
+          {},
+          {}
+        ],
+        "add_desc": "Rusnya must DIE!",
+        "age": 54
+      }
+    }
+  }
+}
