@@ -1,0 +1,93 @@
+{
+  "description": "Опис предметної області ПП",
+  "type": "object",
+  "properties": {
+    "spot_info": {
+      "description": "spot_des",
+      "type": "object",
+      "properties": {
+        "desc": {
+          "description": "spot_des",
+          "type": "string"
+        },
+        "image": {
+          "description": "Photo_spot",
+          "type": "BinData"
+        },
+        "location": {
+          "description": "GeoLocation",
+          "type": "Point"
+        },
+        "name": {
+          "description": "name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "image",
+        "desc",
+        "location"
+      ]
+    },
+    "user": {
+      "description": "user description",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "nick_name",
+          "type": "string"
+        },
+        "profile_photo": {
+          "description": "profile_photo",
+          "type": "BinData"
+        },
+        "_info": {
+          "description": "desc",
+          "type": "object",
+          "properties": {
+            "real_name": {
+              "description": "name",
+              "type": "string"
+            },
+            "photo": {
+              "description": "photos",
+              "type": "BinData"
+            },
+            "desc": {
+              "description": "desc",
+              "type": "string"
+            },
+            "add_info": {
+              "description": "desc",
+              "type": "object",
+              "properties": {
+                "real_name": {
+                  "description": "name",
+                  "type": "string"
+                },
+                "photo": {
+                  "description": "add_photos",
+                  "type": "BinData"
+                },
+                "desc": {
+                  "description": "add_desc",
+                  "type": "string"
+                },
+                "contacts": {
+                  "description": "user_number",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+        
+      },
+      "required": [
+        "name",
+        "photo"
+      ]
+    }
+  }
+}
