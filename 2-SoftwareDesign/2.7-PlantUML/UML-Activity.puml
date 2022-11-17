@@ -1,0 +1,17 @@
+@startuml
+
+title Activity Diagram
+
+start
+
+:ПП робить запит на отримання\n мапи оренди точок  з API; 
+
+if (Запит закінчився успішно?) then (yes)
+  :Отримано дані з API;
+else (no)
+  :Api Error;
+endif
+
+stop
+
+@enduml

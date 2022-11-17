@@ -1,0 +1,68 @@
+@startjson json
+
+title JSON Schema
+
+{
+  "description": "Опис предметної області ПП",
+  "type": "object",
+  "properties": {
+    "consumer": {
+      "description": "Профіль користувача",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я користувача",
+          "type": "string"
+        },
+        "photo": {
+          "description": "Фото користувача",
+          "type": "BinData"
+        },
+        "info": {
+          "description": "Мапа оренди точок ",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Ім'я точки ",
+              "type": "string"
+            },
+            "photo": {
+              "description": "Фото точки",
+              "type": "BinData"
+            },
+            "desc": {
+              "description": "Короткий опис точки",
+              "type": "string"
+            },
+            "TempInfo": {
+              "description": "температура  приміщення на точці",
+              "type": "string"
+            }
+             "RentPrice": {
+              "description": "ціна оренди точки",
+              "type": "string"
+            }
+         
+              },
+              "required": [
+                "name",
+                "photo",
+                "desc"
+              
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "info",
+            "photo",
+            "TempInfo",
+            "RentPrice"
+
+            "desc"
+          ]
+        }
+      }
+    }
+
+@endjson
