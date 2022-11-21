@@ -1,0 +1,30 @@
+@startuml uml3
+
+title Concept Classes Diagram
+
+skinparam linetype ortho
+
+Class "Користувач" as sp {
+    Ім'я
+    Фото
+}
+Class "профіль користувача" as ac {
+    Ім'я
+    Фото
+    Короткий опис
+    Контактні дані
+}
+Class "Мапа точок доступу" as ii {
+    Ім'я
+    Фото
+    Опис
+    Статус
+    
+}
+
+sp"*" --> "*"ac : переглядає
+sp"1" o-- "1"ac
+sp"*" --> "*"ii : переглядає
+ac"1" o-- "1"ii
+
+@enduml
